@@ -1,0 +1,137 @@
+.gpt_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.gpt_navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gpt_navbar-links-logo{
+    margin-right: 2rem;
+}
+.gpt_navbar-links-logo img{
+    width: 62.56px;
+    height: 16.02px;
+}
+.gpt_navlink_contain{
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+}
+.gpt_navlink_sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gpt_navlink_contain p,
+.gpt_navlink_sign p,
+.gpt_navmenu-contain p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.gpt_navlink_sign p:hover{
+    background-color: white;
+    color: #e9411c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.gpt_navlink_sign button,
+.gpt_navmenu-contain button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.gpt_navlink_sign button:hover,
+.gpt_navmenu-contain button:hover {
+    background: #e9411c
+}
+.gpt_nav-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.gpt_nav-menu svg{
+    cursor: pointer;
+}
+.gpt_navmenu-contain{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: rgb(3, 27, 52,0.7);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+.gpt_navmenu-contain p{
+    margin: 1rem 0;
+}
+.gpt_navmenu-contain-link-sign{
+    display: none;
+}
+.gpt_navmenu-contain-link-sign p:hover{
+    background-color: white;
+    color: #e9411c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt_navlink_contain {
+        display: none;
+    }
+
+    .gpt_nav-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt_navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt_navbar {
+        padding: 2rem;
+    }
+
+    .gpt_navlink_sign {
+        display: none;
+    }
+
+    .gpt_navmenu_contain {
+        top: 20px;
+    }
+
+    .gpt_navmenu-contain-link-sign {
+        display: block;
+    }
+}
